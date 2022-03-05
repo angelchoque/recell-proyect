@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+  <meta name="google-site-verification" content="Jhsw1iBpwYF-D1Hv9JS5TFGs7U4RcTNm7aUFeO3vXTc" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K4DXF7F');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recell - Tratamiento de Inmunoterapia Contra el Cáncer">
+  <title>Inmunoterapia - Recell</title>
+  <link rel="shortcut icon" href="https://elmejorplandesalud.cl/assets/images/ico.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+ <style>
+   body{
+     font-family: 'Roboto', sans-serif !important;
+   }
+   .logo{
+     width: 220px;
+   }
+   .header-back{
+     /* background-image: url("./images/background.jpg;"); */
+     background-color: #0109f3;
+     background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url("./images/background.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* height: 100vh; */
+   }
+   .transparency-fx{
+    background: #02010173;
+   }
+   .transparency-fx-2{
+    /* background: #00000073; */
+    background-image: linear-gradient(
+      rgba(20, 20, 20, 0.8),
+      rgba(20, 20, 20, 0.8)
+    ),
+    url("./images/placeholder.png");
+     background-position: center center;
+     background-size: cover;
+   }
+   .contact-card{
+     background-color: #0109f3;
+     background-image: linear-gradient(
+      rgba(6, 147, 227, 0.6),
+      rgba(6, 147, 227, 0.6)
+    ),
+    url("./images/placeholder.png");
+     background-position: center center;
+     background-size: cover;
+     height: 180px;
+     width: 75%;
+   }
+   .stats-image{
+     width: 600px;
+   }
+   .number-stats-card{
+    min-height: 180px;
+   }
+   @media only screen and (max-width: 768px) {
+    .contact-card {
+      background-color: lightblue;
+      height: 220px;
+      width: 100%;
+      }
+      .contact-card > div{
+        margin: 10px 0 !important;
+        width: 100% !important;
+      }
+      .stats-image{
+        max-width: 100%;
+      }
+      .number-stats-card > div{
+        margin: 10px 0 !important;
+      }
+    }
+   .btn-whatsapp{
+    background-color: #03cc0b;
+    height: 60px;
+    width: 220px;
+    transition: .3s;
+   }
+   .btn-whatsapp:hover{
+     transform: scale(1.1);
+   }
+   .btn-action{
+     height: 50px;
+     width: 200px;
+     background: rgb(1, 112, 185);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   .text-section{
+     background-image: url("./images/placeholder.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+   }
+   .font-14{
+     font-size: 14px;
+   }
+   .second-button{
+     background: white;
+     color: #9170dd;
+   }
+   .stats-back{
+    background-image: linear-gradient(
+      rgba(127, 17, 224, 0.6),
+      rgba(127, 17, 224, 0.6)
+    ),
+    url("./images/placeholder.png");
+     background-position: center center;
+     background-size: cover;
+   }
+   .financing-preview{
+    width: 100%;
+   }
+   .hiden-card{
+     display: none !important;
+   }
+ </style>
+</head>
+<body>
+  <div class="">
+    <a class="btn fixed-bottom rounded-pill btn-whatsapp text-light ms-4 mb-4 d-flex align-items-center justify-content-center px-2" href="https://wa.link/ib072j">
+      <i class="fa-brands fa-whatsapp text-light fs-3 me-2"></i>
+      <span>Bienvenido a Recell</span>
+    </a>
+    <picture style="z-index: 2000;" class="financing-preview hiden-card w-100 vh-100 transparency-fx position-fixed top-50 start-50 translate-middle d-flex flex-column align-items-center">
+      <button id="btn-x" style="border-radius: 30px; width: 60px; height: 60px; background-color: #191919; outline: none; border: 2px solid white;" class="bold text-light">X</button>
+      <img style="min-width: 300px; width: 30%;" src="./images/Con-Val.jpg" class="financing-img ms-auto me-auto" alt="">
+    </picture>
+    <header class="position-relative">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img class="logo" src="./logo.png" alt="logo-recell">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav ps-5 ms-5" >
+              <li class="nav-item">
+                <a class="nav-link fw-normal text-dark" href="https://www.oncocit.com/tratamiento-cancer/">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="https://recell.cl/testimonios/">TESTIMONIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="https://oncovix.com/?p=1615">PRENSA</a>
+              </li>
+              <li class="nav-item">
+                <button style="outline: none; background: none; border: none;" id="financing" class="nav-link text-dark" href="#" >FINANCIAMIENTO</button>
+              </li>
+            </ul>
+            <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action " type="button">AGENDA UNA CITA</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-back">
+        <div class="vh-100 transparency-fx">
+          <br><br><br><br><br><br>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-7 text-center text-md-start">
+                <p class="text-light fs-1 fw-bold text lh-sm text-center text-md-start" style="font-family: 'Roboto Slab', serif;">
+                  Centro Oncocit de EEUU abre en Chile su Centro internacional de inmunoterapia biologica para cancér
+                </p>
+                <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action " type="button">AGENDA UNA CITA</a>
+              </div>
+              <!-- <div class="col-sm-5">
+                <div class="header-contact-form">
+                  <form action="contacto.php" class="row" method="POST" name="contactform">
+                    <h3 class="form-title">Contáctanos</h3>
+                    <input type="text" placeholder="Nombre" name="nombre" class="form-control">
+                    <input type="email" placeholder="Email" name="email" class="form-control">
+                    <input type="text" placeholder="Telefono" name="telefono" class="form-control">
+                    <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control"> 
+                    <textarea placeholder="Mensaje..." name="mensaje" class="form-control"></textarea>
+                    <button type="submit" id="submit" class="btn btn-primary">ENVIAR MENSAJE</button>
+                  </form>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card p-3 position-absolute top-100 start-50 translate-middle d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="w-25 d-flex align-items-center ms-4">
+          <i class="fa-solid fa-phone fs-1 text-light"></i>
+          <div class="text-light ms-4 lh-lg">
+            <a class="text-light" href="">Agenda tu cita</a>
+            <p class="m-0">+56954015631</p>
+          </div>
+        </div>
+        <!-- <div style="background: rgb(8, 164, 255); width: 1px; height: 120px;" class="me-4"></div> -->
+        <div class="w-75 d-flex align-items-center ms-4">
+          <i class="fa-solid fa-clock fs-1 text-light"></i>
+          <div class="text-light ms-4 lh-lg">
+            <button style="outline: none; background: none; border: none;" id="valores" class="nav-link text-light text-decoration-underline text-start" >VALORES TRATAMIENTO</button>
+            <p class="m-0">ATENCIÓN A DOMICILIO DEL PACIENTE</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <main>
+      <section class="container mt-4">
+        <br><br><br><br><br>
+        <div class="row">
+          <form action="contacto.php" class="col-12 col-md-6" method="POST" name="contactform">
+            <h3>
+              Mas información
+            </h3>
+            <div class="mb-3">
+              <label for="form-name" class="form-label">Nombre *</label>
+              <input type="text" placeholder="Nombre" name="nombre" class="form-control" id="form-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="form-email" class="form-label">Email *</label>
+              <input type="email" placeholder="Email" name="email" class="form-control" id="form-email" required>
+            </div>
+            <div class="mb-3">
+              <label for="form-phone" class="form-label">Telefono *</label>
+              <input type="text" placeholder="Telefono" name="telefono" class="form-control" id="form-phone" required>
+            </div>
+            <div class="mb-3">
+              <label for="form-option" class="form-label">Tipo de Cáncer *</label>
+              <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control" id="form-option" required> 
+            </div>
+            <div class="mb-3">
+              <label for="form-message" class="form-label">Mensaje</label>
+              <textarea placeholder="Mensaje..." name="mensaje" class="form-control" id="form-message"></textarea>
+            </div>
+            <button type="submit" name="submit" class="btn btn-primary mx-auto">ENVIAR MENSAJE</button>
+            <br><br>
+          </form>
+          <div class="col-12 col-md-6">
+            <h4>La mejor opción en Iberoamérica para mayor sobrevida y calidad de vida</h4>
+            <p>
+              Estos tratamientos se toleran muy bien y el paciente es capaz de mantener esa calidad de vida que tenia previamente sin deterioro, por otra parte, el gran paradigma de la inmunoterapia es la capacidad de conseguir una prolongación sustancial de la supervivencia del paciente que a veces excede de muchos meses y a veces de años, aspectos que no hemos visto previamente con ningún otro tipo de tratamiento en el área de la oncología.
+            </p>
+            <h5>Programa de inmunoterapia contra el Cancér</h5>
+            <p>
+              Terapia adoptiva, cuya pauta incluye diseño de posología, algoritmos moleculares de laboratorio, protocolo de admisión, aplicación y monitoreo, bajo estándares de compliance internacionales.
+              <br>
+              El programa corresponde a inmunoterapia biológica de precisión, basada en exosomas de células dendríticas pulsadas (pulsed dendritic cell exosomes immunotherapy), de 3ª generación, inmunogenica, intradérmica, personalizada hacia el diagnóstico del paciente.
+            </p>
+            <h5>Respaldo internacional Centro Oncocit de EEUU a Recell Chile</h5>
+          </div>
+        </div>
+        <br><br><br><br>
+      </section>
+
+      <div style="background-position: center;" class="header-back">
+        <div class="transparency-fx h-100">
+          <div class="number-stats-card container d-flex flex-column justify-content-center align-items-center flex-md-row h-100 text-light">
+            <div class="mx-4 px-4 text-center">
+              <h4>2480</h4>
+              <span>Pacientes al año</span>
+            </div>
+            <div class="mx-4 px-4 text-center">
+              <h4>100</h4>
+              <span>Personas trabajando</span>
+            </div>
+            <div class="mx-4 px-4 text-center">
+              <h4>12</h4>
+              <span>Años de experiencia</span>
+            </div>
+            <div class="mx-4 px-4 text-center">
+              <h4>9654</h4>
+              <span>Sonrisas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--  -->
+      <div class="text-section">
+        <div class="transparency-fx-2">
+          <div class="container">
+              <br><br><br><br>
+              <div class="row text-light text-center fst-italic">
+                <h4>EL MAS AVANZADO TRATAMIENTO</h4>
+                <p>EL MAS AVANZADO TRATAMIENTO DE INMUNO-ONCOLOGIA MOLECULAR CONTRA EL CÁNCER. TERAPIA CELULAR PERSONALIZADO DE “NEXT GENERATION”</p>
+                <p>
+                  «Tratamiento con efectividad inmunológico en un 70-80% de los pacientes». Tratamiento con vacuna ONCOVIX® que consiste en aislar células desde la sangre y programarlas para que puedan combatir el cáncer, concentradas luego en una vacuna para cada paciente. Efectiva para TUMOR SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata, páncreas, pulmón y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y Leucemias.
+                </p>
+                <br>
+                <p class="bold">
+                EXITOSOS CASOS DE INMUNOTERAPIA ADOPTIVA DE EXOSOMAS ONCOVIX® CONTRA TUMOR SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata, páncreas, pulmón y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y Leucemias.
+                </p>
+              </div>
+              <br><br><br><br>
+              <div class="text-center text-light fst-italic ">
+                <h3 class="fst-normal">El cáncer de TUMOR SOLIDO Como funciona el tratamiento</h3>
+                <p>
+                  El cáncer de TUMOR SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata, páncreas, pulmón y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y Leucemias,  es inmunogénico, es decir, despierta la inmunidad del paciente, más aún en protocolos potenciados vía inmunopéptidos y oligonucleótidos.
+                </p>
+                <p>
+                  Es aquí, donde la vacuna ONCOVIX® ha logrado aumentar significativamente la sobrevida, en mejores condiciones y en casos extraordinarios, pacientes han logrado remisión parcial, fase de “no progresión” o “enfermedad controlada y hasta completa eliminación de lesiones tumorales específicas.
+                </p>
+                <p>
+                  Hoy existen publicaciones en revistas científicas de alto impacto que dan sólida evidencia de la aplicación y resultados en cáncer de distinta ubicación. ONCOCIT-USA monitorea los más recientes avances globales para ponerlos a disposición del cáncer del paciente y NO SE LIMITA por convenios o patentes con Universidades o Clínicas colaboradoras. Inmunoterapia avanzada en la comodidad de tu hogar, ciudad y país.
+                </p>
+                <p>
+                  RECUERDE: Al ser una terapia biológica, como lo es un injerto, trasplante o fertilización asistida, la respuesta final para la misma terapia puede ser es variable en distintos pacientes.  Hay personas que mantienen su cáncer controlado, en fase de no progresión o remisión parcial, con muy buena calidad de vida, y prácticamente sin complicaciones o  síntomas.  La respuesta final dependerá de del estado clínico del paciente y deterioro por tratamientos simultaneos (estado inmunológico) y del tumor (grado o tipo histológico,  nivel de avance o agresividad o resistencia a tratamientos previos).
+                </p>
+                <!--  -->
+                <br><br>
+                <h4>En USA</h4>
+                <!--  -->
+                <p>
+                  La Vacuna ONCOVIX® fue desarrollada gracias a proyectos desarrollados desde el año 2000 en USA y/o CHILE, a lo cual se incorporaron luego universidades, clínicas y laboratorios de América y Europa; hoy cuenta con resultados clínicos validados por estudios propios y respaldados por publicaciones externas en las revistas científicas más reconocidas a nivel mundial, confirmandose la alta seguridad y efectividad incluso en estados avanzados del cáncer y fase metastásica.ONCOVIX® es la más avanzada biotecnología contra TUMOR SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y Leucemias,  es inmunogénico, es decir, despierta la inmunidad del paciente, más aún en protocolos potenciados vía inmunopéptidos y oligonucleótidosEn casos de melanoma maligno diseminado en etapa 4, donde generalmente la sobrevida no supera el año (entre los 8 y 10 meses en promedio), se ha logrado subir la sobrevida general hasta los 26 meses.
+                </p>
+                <p>
+                  Cuando se trata a personas que están en etapa 3 y 4 se ha logrado, eliminación de lesiones metastásicas y hasta detener la progresión de la enfermedad.
+                </p>
+                <p>
+                  Oncocit • Tavistock Lakes blvd. •Orlando Florida • United States of America •
+                </p>
+                <br><br>
+                <h4>A quién está dirigido</h4>
+                <p>
+                  A todo paciente que se les ha diagnosticado la enfermedad, que tuvo o tiene  cáncer, no importando en qué etapa esté, con propósito, terapéutico, paliativo o preventivo de Enfermedad Mínima residual y recaída. El protocolo de inmunoterapia adoptiva activa especifica para estos propósitos (terapéutico, paliativo o preventivo) es el mismo. El efecto final no depende del protocolo, sino de la capacidad de procesamiento del sistema inmune, que a su vez esta condicionado por la masa o volumen tumoral existente en el paciente. Es decir, a mayor masa tumoral (metástasis múltiples o pacientes que no recibieron cirugía) el proposito final sera más bien paliativo que curativa, teniendo en cuenta que las mayores sobrevidas generales y mejores condiciones clínicas del paciente se consiguen en protocolos que han incluido imunoterapia. En resumen, mientras antes se incorpore la inmunoterapia, mayor probabilidad de mejores resultados.
+                </p>
+                <p>
+                  Los mejores resultados y beneficios se obtiene al  comenzar el tratamiento con ONCOVIX® se obtiene cuando se aplica lo más cerca del momento del diagnóstico.
+                </p>
+                <p>
+                  La inmunoterapia celular simple deja fuera de tratamiento la mayoría de los cáncer, pero aa avanzada biotecnología de inmunoterapia adoptiva de exosomas, es más efectiva y actúa contra  TUMOR SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata, páncreas, pulmón y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y Leucemias.
+                </p>
+              </div>
+              <br><br><br>
+            </div>
+        </div>
+      </div>
+<!--  -->
+      <section>
+        <div style="background: #282828;" class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-4 text-light ps-4 d-flex flex-column justify-content-center font-14">
+              <h4>Testimonios</h4>
+              <p class="fst-italic">Nuestros pacientes presentan sus testimonios gracias a los resultados obtenidos de sus tratamientos. Testimonios reales logrados solo por la dicha y satisfacción.</p>
+              <a class="fw-bold text-decoration-none" style="color: #9170dd;" href="https://recell.cl/testimonios/?_gl=1*xc6gjl*_ga*MTYxNTg4NzgyNC4xNjQwMjAzMjE2*_ga_ERZTQMHTJP*MTY0Mzk5MDM2NC4xMy4wLjE2NDM5OTAzNjQuMA..&_ga=2.106212483.1260780749.1643942121-1615887824.1640203216">Ver mas &#8594;</a>
+            </div>
+            <iframe class="col-12 col-sm-6 col-md-4 p-0" width="447" height="250" src="https://www.youtube.com/embed/DA7nVckKlt8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="col-12 col-sm-6 col-md-4 p-0" width="447" height="250" src="https://www.youtube.com/embed/sIPNuVURvKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 text-light ps-4 d-flex flex-column justify-content-center">
+              <h4>Prensa de Interes</h4>
+              <p class="fst-italic">Los distintos medios muestran nuestros resultados y trabajo. Conocer los últimos avances sobre nuestro centro y la información acerca de todos sus profesionales</p>
+              <a class="fw-bold text-decoration-none" style="color: #9170dd;" href="https://www.youtube.com/channel/UCkpnXP00Au6nSiZvgBEa4xQ">Ver mas &#8594;</a>
+            </div>
+            <iframe class="col-12 col-sm-6 col-md-4 p-0" width="447" height="250" src="https://www.youtube.com/embed/NXUdojSn00k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="col-12 col-sm-6 col-md-4 p-0" width="447" height="250" src="https://www.youtube.com/embed/H4uiNA3R5gM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+<!--  -->
+      <section>
+        <br><br><br>
+        <div class="container">
+          <div class="row d-flex align-items-center">
+              <h4 class="col-12 com-md-3 fw-bold">ONCOCIT-USA:</h4>
+              <p class="col-12 col-md-9" style="font-style: italic;">
+                ONCOCIT, desde su casa matriz en la ciudad médica de Lake Nona, Orlando, Florida, USA, es un referente global, consolidado en inmuno oncología molecular, líder en resultados para Iberoamérica, permitiendo cada día, que más pacientes en distintas ciudades y países, reciban en la comodidad de su hogar, un tratamiento cuyo protocolo combinado resulta el más avanzado, accesible, efectivo y seguro a nivel mundial, para conseguir la defensa antitumoral que nuestro cuerpo necesita, junto a un mecanismo de “memoria” que permanece por años, reduciendo la recaída por Enfermedad Mínima Residual (EMR), enfermedad distinta al tumor primario y responsable de alto porcentaje complicaciones y fracasos terapéuticos, que muy pocos tratamientos oncológicos convencionales pueden abordar.
+              </p> 
+          </div>
+          <br><br><br>
+          <article class="row">
+            <div class="col-12 col-md-8 border border-5">
+              <div class="p-4 m-4">
+                <h4>Centro Oncocit</h4>
+                <br>
+                <h5 class="" style="font-style: italic;">Oncocit centro de Estados Unidos abre en Chile su centro internacional de inmunoterapia biologica en cancér junto a Recell Chile </h5>
+                <br>
+                <p>
+                  El protocolo terapéutico para vacuna en cáncer de ONCOCIT, denominado ONCOVIX® (oncological vaccine by immunotherapy of exosomes) es la “next generation” o versión más avanzada de inmunoterapia adoptiva molecular activa específica personalizada, pues aún cuando nace de células dendríticas, su encapsulación de Exosomas le permite ser efectivo contra TUMOR  SOLIDO que incluye carcinoma (cáncer de mama, gástrico, colón, vesícula biliar, hepático, renal, testicular, ovárico, ginecológico, piel, próstata, páncreas, pulmón y otros), gliomas,  sarcoma, melanoma, linfomas no hodgkin, entre otros y gracias a un proceso de aislación complementaria, ha logrado efectividad también contra LEUCEMIA, donde se ha convertido en una de las mejores opciones para atacar además la Enfermedad Mínima Residual.
+                </p>
+                <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action">AGENDAR UNA CITA</a>
+              </div>
+            </div>
+          </article>
+          <br><br><br>
+        </div>
+      </section>
+
+      <section style="background: #051131;" class="d-flexr">
+        <div class="container">
+          <br><br>
+          <div class="row">
+            <div class="col-12 col-md-9 text-light text-center">
+              <i class="fa-solid fa-clipboard-list fs-1"></i>
+              <p>Ingresa a nuestro sitio web Recell Chile</p>
+              <p>Atención exclusiva domiciliaria al paciente oncológico| Reserve hora Exclusivo Whatsapp / Telegram : +56947711179 +56954015631</p>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+              <a href="https://www.recell.cl" class="btn rounded-pill second-button">MAS INFORMACIÓN</a>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </section>
+
+      <section class="text-center stats-back">
+        <br><br><br>
+        <div class="">
+          <div class="text-light text-center">
+            <h2>RECELL® COMPARACIÓN COSTO CON OTRAS INMUNOTERAPIAS Y TERAPIAS DE PRECISION</h2>
+            <div>Inmunoterapia CANCER</div>
+            <br>
+            <button style="color: #9170dd !important;" id="valores-stats" class="btn rounded-pill second-button nav-link mx-auto" >VALOR TRATAMIENTO</button>
+          </div>
+          <br><br><br>
+          <picture>
+            <img class="stats-image" src="./images/stats.jpg" alt="stats">
+          </picture>
+        </div>
+      </section>
+
+      <section>
+        <div class="header-back">
+          <div class="transparency-fx">
+            <br><br><br>
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6"></div>
+                <div class="col-12 col-md-6">
+                    <div class="header-contact-form">
+                      <form action="contacto.php" method="POST" name="contactform">
+                        <h3 class="form-title text-light">Quiero que me contacten</h3>
+                        <input type="text" placeholder="Nombre" name="nombre" class="form-control my-2">
+                        <input type="email" placeholder="Email" name="email" class="form-control my-2">
+                        <input type="text" placeholder="Telefono" name="telefono" class="form-control my-2">
+                        <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control my-2"> 
+                        <textarea placeholder="Mensaje..." name="mensaje" class="form-control my-2"></textarea>
+                        <button type="submit" class="btn btn-primary my-2">ENVIAR MENSAJE</button>
+                      </form>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <br><br><br>
+          </div>
+        </div>
+      </section>
+    </main>  
+
+    <footer>
+      <div class="" style="background: #282828;">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-12 col-md-5 text-light">
+              <br>
+              <picture style="width: 150px;">
+                <img class="logo" src="./images/clean-logo.png" alt="logo">
+              </picture>
+              <br><br>
+              <p class="font-14">
+                Institución líder y de excelencia , en la aplicación de INMUNOTERAPIA, reconocidos por nuestro profesionalismo, protocolos médicos.
+              </p>
+              <ul class="text-light list-unstyled font-14">
+                <li>
+                  <i class="fa-regular fa-envelope"></i>
+                  <span class="fst-italic ms-2">Gestion@biogenica.org</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="ms-2">
+                    +56 9 4771 1179
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="ms-2">
+                    +56 9 5401 5631
+                  </span>
+                </li>
+                <li>
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span class="ms-2">
+                    whattsapp
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-5">
+              <br>
+              <h5 class="text-light">Links de interes</h5>
+              <div style="width: 50px; height: 2px; background-color: #9170dd;"></div>
+              <div class="d-flex justify-content-between">
+                <ul class="text-light list-unstyled font-14 h-100">
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="http://www.recell.cl/"> Recell </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://oncovix.com/"> Oncovix </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="http://www.biogenica.org/"> Biogenica </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://recell.cl/testimonios/"> Testimonios </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://recell.cl/prensa/?_ga=2.64508079.1215488858.1645555820-1615887824.1640203216&_gl=1*kvvsip*_ga*MTYxNTg4NzgyNC4xNjQwMjAzMjE2*_ga_ERZTQMHTJP*MTY0NTU1NTgxNi4yMi4xLjE2NDU1NTg1MTguMA.."> Prensa </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://www.youtube.com/channel/UCkpnXP00Au6nSiZvgBEa4xQ"> Resultados </a>
+                  </li>
+                </ul>
+                <ul class="text-light list-unstyled font-14 h-100">
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://oncovix.com/?page_id=275"> Presentacion </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://www.oncocit.com/wp-content/uploads/2021/09/Con-Val.jpg"> Valores </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://oncovix.com/?page_id=198"> Profesionales </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://oncovix.com/?page_id=2523"> Financiamiento </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://recell.cl/resultados/"> Inmunoterapia </a>
+                  </li>
+                  <li class="my-3">
+                    <a class="text-light text-decoration-none" href="https://oncovix.com/"> Centro USA</a> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <br>
+              <div style="width: 50px; height: 2px; background-color: #9170dd;"></div>
+              <!-- nothing -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="" style="background: #191919;">
+        <div class="container" >
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <a href="https://www.facebook.com/recell.inmunoterapia" class="me-2 text-light text-decoration-none ">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/centro_de_cancer_recell/" class="mx-2 text-light text-decoration-none">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCkpnXP00Au6nSiZvgBEa4xQ" class="mx-2 text-light text-decoration-none">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 text-end text-light font-14">
+              <span>Recell. ©2022 All Rights Reserved</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/16748e7e02.js" crossorigin="anonymous"></script>
+
+  <script>
+    const financing = document.querySelector("#financing") //input
+    const financingPreview = document.querySelector(".financing-preview")
+    const financingImg = document.querySelector(".financing-img")
+    const btnX = document.querySelector("#btn-x")
+    const valores = document.querySelector("#valores")
+    const valoresStats = document.querySelector("#valores-stats")
+    financing.addEventListener("click", () => {
+      financingPreview.classList.remove("hiden-card")
+    })
+    valores.addEventListener("click", ()=> {
+      financingPreview.classList.remove("hiden-card")
+    })
+    valoresStats.addEventListener("click", () => {
+      financingPreview.classList.remove("hiden-card")
+    })
+    btnX.addEventListener("click", () => {
+      financingPreview.classList.add("hiden-card")
+    })
+  </script>
+
+  <!-- <script src="assets/js/vendors/jquery.min.js"></script>
+  <script src="assets/js/vendors/bootstrap.min.js"></script>
+  <script src="assets/js/vendors/jquery.countdown.min.js"></script>
+  <script src="assets/js/vendors/jquery.stellar.min.js"></script>
+  <script src="assets/js/vendors/scrollReveal.min.js"></script>
+  <script src="assets/js/vendors/baguetteBox.min.js"></script>
+  <script src="assets/js/vendors/slick.min.js"></script>
+  <script src="assets/js/vendors/wow.min.js"></script>
+  <script src="assets/js/vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+  <script src="assets/js/main.js"></script> -->
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4DXF7F"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
