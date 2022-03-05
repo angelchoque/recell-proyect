@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
     $email_to = "biogenicaoncocit@gmail.com,gestion@biogenica.org";
