@@ -77,6 +77,9 @@
    .number-stats-card{
     min-height: 180px;
    }
+   .header-nav-item{
+     color: #282828;
+   }
    @media only screen and (max-width: 768px) {
     .contact-card {
       background-color: lightblue;
@@ -92,6 +95,17 @@
       }
       .number-stats-card > div{
         margin: 10px 0 !important;
+      }
+      .btn-position{
+        margin: 0 auto 80px;
+      }
+      .header-navbar{
+        margin: 0 auto !important;
+        padding: 0 !important;
+        text-align: center;
+      }
+      .spacing-card{
+        height: auto;
       }
     }
    .btn-whatsapp{
@@ -139,6 +153,7 @@
    .hiden-card{
      display: none !important;
    }
+
  </style>
 </head>
 <body>
@@ -153,7 +168,7 @@
         <img style="min-width: 300px; width: 30%;" src="./images/Con-Val.jpg" class="financing-img ms-auto me-auto" alt="">
       </picture>
     </div>
-    <header class="position-relative">
+    <header class="position-relative margin-spacing">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <a class="navbar-brand" href="/">
@@ -163,49 +178,75 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav ps-5 ms-5" >
+            <ul class="navbar-nav ps-5 ms-5 fw-bold font-14 header-navbar">
               <li class="nav-item">
-                <a class="nav-link fw-normal text-dark" href="https://www.oncocit.com/tratamiento-cancer/">NOSOTROS</a>
+                <a class="nav-link header-nav-item" href="https://www.oncocit.com/tratamiento-cancer/">NOSOTROS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="https://recell.cl/testimonios/">TESTIMONIOS</a>
+                <a class="nav-link header-nav-item" href="https://recell.cl/testimonios/">TESTIMONIOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark" href="https://oncovix.com/?p=1615">PRENSA</a>
+                <a class="nav-link header-nav-item" href="https://oncovix.com/?p=1615">PRENSA</a>
               </li>
-              <li class="nav-item">
-                <button style="outline: none; background: none; border: none;" id="financing" class="nav-link text-dark" href="#" >FINANCIAMIENTO</button>
+              <li class="nav-item text-center">
+                <button style="outline: none; background: none; border: none;" id="financing" class="nav-link header-nav-item fw-bold mx-auto">FINANCIAMIENTO</button>
               </li>
             </ul>
-            <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action " type="button">AGENDA UNA CITA</a>
+            <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action mx-auto" type="button">AGENDA UNA CITA</a>
           </div>
         </div>
       </nav>
 
       <div class="header-back">
         <div class="vh-100 transparency-fx">
-          <br><br><br><br><br><br>
+          <br><br><br><br><br>
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-7 text-center text-md-start">
-                <p class="text-light fs-1 fw-bold text lh-sm text-center text-md-start" style="font-family: 'Roboto Slab', serif;">
+                <p class="text-light fs-1 fw-bold text lh-sm text-center text-md-start text-decoration-underline">
                   Centro Oncocit de EEUU abre en Chile su Centro internacional de inmunoterapia biologica para cancér
                 </p>
-                <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action " type="button">AGENDA UNA CITA</a>
+                <!-- <p class="text-light fs-1 fw-bold text lh-sm text-center text-md-start" style="font-family: 'Roboto Slab', serif;">
+                  Centro Oncocit de EEUU abre en Chile su Centro internacional de inmunoterapia biologica para cancér
+                </p> -->
+                <br>
+                <a href="https://wa.link/ib072j" class="btn btn-primary rounded-pill btn-action btn-position" type="button">AGENDA UNA CITA</a>
               </div>
-              <!-- <div class="col-sm-5">
-                <div class="header-contact-form">
+              <!--  -->
+              <div class="col-12 col-md-5">
+                <!-- <div class="header-contact-form">
                   <form action="contacto.php" class="row" method="POST" name="contactform">
-                    <h3 class="form-title">Contáctanos</h3>
-                    <input type="text" placeholder="Nombre" name="nombre" class="form-control">
-                    <input type="email" placeholder="Email" name="email" class="form-control">
-                    <input type="text" placeholder="Telefono" name="telefono" class="form-control">
-                    <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control"> 
-                    <textarea placeholder="Mensaje..." name="mensaje" class="form-control"></textarea>
+                    <h3 class="form-title text-light">Contáctanos</h3>
+                    <input type="text" placeholder="Nombre" name="nombre" class="form-control my-1">
+                    <input type="email" placeholder="Email" name="email" class="form-control my-1">
+                    <input type="text" placeholder="Telefono" name="telefono" class="form-control my-1">
+                    <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control my-1"> 
+                    <textarea placeholder="Mensaje..." name="mensaje" class="form-control my-1"></textarea>
                     <button type="submit" id="submit" class="btn btn-primary">ENVIAR MENSAJE</button>
                   </form>
-                </div>
-              </div> -->
+                  
+                </div> -->
+                <form action="contacto.php" class="bg-white rounded p-5" method="POST" name="contactform">
+                  <h3 class="">Contáctanos</h3>
+                  <div class="mb-1">
+                    <input type="text" placeholder="Nombre" name="nombre" class="form-control" id="form-name" required>
+                  </div>
+                  <div class="mb-1">
+                    <input type="email" placeholder="Email" name="email" class="form-control" id="form-email" required>
+                  </div>
+                  <div class="mb-1">
+                    <input type="text" placeholder="Telefono" name="telefono" class="form-control" id="form-phone" required>
+                  </div>
+                  <div class="mb-1">
+                    <input type="text" placeholder="Tipo de Cáncer" name="tipo" class="form-control" id="form-option" required> 
+                  </div>
+                  <div class="mb-1">
+                    <textarea placeholder="Mensaje..." name="mensaje" class="form-control" id="form-message"></textarea>
+                  </div>
+                  <button type="submit" name="submit" class="btn btn-primary mx-auto">ENVIAR MENSAJE</button>
+                </form>
+              </div>
+              <!--  -->
             </div>
           </div>
         </div>
@@ -234,7 +275,7 @@
       <section class="container mt-4">
         <br><br><br><br><br>
         <div class="row">
-          <form action="contacto.php" class="col-12 col-md-6" method="POST" name="contactform">
+          <!-- <form action="contacto.php" class="col-12 col-md-6" method="POST" name="contactform">
             <h3>
               Mas información
             </h3>
@@ -260,7 +301,8 @@
             </div>
             <button type="submit" name="submit" class="btn btn-primary mx-auto">ENVIAR MENSAJE</button>
             <br><br>
-          </form>
+          </form> -->
+          <iframe class="col-12 col-md-6" width="853" height="480" src="https://www.youtube.com/embed/GfSGVoxS0h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="col-12 col-md-6">
             <h4>La mejor opción en Iberoamérica para mayor sobrevida y calidad de vida</h4>
             <p>
