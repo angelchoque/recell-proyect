@@ -79,7 +79,52 @@
    }
    .header-nav-item{
      color: #282828;
-   }
+    }
+    .btn-whatsapp{
+     background-color: #03cc0b;
+     height: 60px;
+     width: 220px;
+     transition: .3s;
+    }
+    .btn-whatsapp:hover{
+      transform: scale(1.1);
+    }
+    .btn-action{
+      height: 50px;
+      width: 200px;
+      background: rgb(1, 112, 185);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-section{
+      background-image: url("./images/placeholder.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .font-14{
+      font-size: 14px;
+    }
+    .second-button{
+      background: white;
+      color: #9170dd;
+    }
+    .stats-back{
+     background-image: linear-gradient(
+       rgba(127, 17, 224, 0.6),
+       rgba(127, 17, 224, 0.6)
+     ),
+     url("./images/placeholder.png");
+      background-position: center center;
+      background-size: cover;
+    }
+    .financing-preview{
+     width: 100%;
+    }
+    .hiden-card{
+      display: none !important;
+    }
    @media only screen and (max-width: 768px) {
     .contact-card {
       background-color: lightblue;
@@ -105,54 +150,12 @@
         text-align: center;
       }
       .spacing-card{
-        height: auto;
+        height: auto !important;
+      }
+      .margin-spacing{
+        margin-bottom: 200px;
       }
     }
-   .btn-whatsapp{
-    background-color: #03cc0b;
-    height: 60px;
-    width: 220px;
-    transition: .3s;
-   }
-   .btn-whatsapp:hover{
-     transform: scale(1.1);
-   }
-   .btn-action{
-     height: 50px;
-     width: 200px;
-     background: rgb(1, 112, 185);
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-   .text-section{
-     background-image: url("./images/placeholder.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-   }
-   .font-14{
-     font-size: 14px;
-   }
-   .second-button{
-     background: white;
-     color: #9170dd;
-   }
-   .stats-back{
-    background-image: linear-gradient(
-      rgba(127, 17, 224, 0.6),
-      rgba(127, 17, 224, 0.6)
-    ),
-    url("./images/placeholder.png");
-     background-position: center center;
-     background-size: cover;
-   }
-   .financing-preview{
-    width: 100%;
-   }
-   .hiden-card{
-     display: none !important;
-   }
 
  </style>
 </head>
@@ -168,7 +171,7 @@
         <img style="min-width: 300px; width: 30%;" src="./images/Con-Val.jpg" class="financing-img ms-auto me-auto" alt="">
       </picture>
     </div>
-    <header class="position-relative margin-spacing">
+    <header class="position-relative">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <a class="navbar-brand" href="/">
@@ -198,7 +201,7 @@
       </nav>
 
       <div class="header-back">
-        <div class="vh-100 transparency-fx">
+        <div class="vh-100 transparency-fx spacing-card">
           <br><br><br><br><br>
           <div class="container">
             <div class="row">
@@ -226,7 +229,7 @@
                   </form>
                   
                 </div> -->
-                <form action="contacto.php" class="bg-white rounded p-5" method="POST" name="contactform">
+                <form action="contacto.php" class="bg-white rounded p-5 margin-spacing" method="POST" name="contactform">
                   <h3 class="">Contáctanos</h3>
                   <div class="mb-1">
                     <input type="text" placeholder="Nombre" name="nombre" class="form-control" id="form-name" required>
